@@ -45,13 +45,14 @@ body {
 }
 
 .button-container {
-    Width: min(100%,950px);
+    width: min(100%, 950px);
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en múltiples líneas si es necesario */
+    justify-content: space-around; /* Distribuye los botones de manera uniforme */
+    gap: 0px;/* Separación de los botones de abajo de izquierda a derecha */
     align-self: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .social-links {
@@ -98,15 +99,14 @@ body {
 }
 
 .btn {
-    
-    padding: 15px 25px;
+    width: 200px; /* Establece un ancho fijo para todos los botones */
+    padding: 20px 40px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 0 4px #999;
-    border-radius: 31px;
     background: #e0e0e0;
     box-shadow:  5px 5px 10px #bebebe,
     -5px -5px 10px #ffffff;
