@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center; /* Alinea los elementos al principio del contenedor verticalmente */
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -19,13 +19,15 @@ body {
 
 .title {
     Width: min(100%,950px);
+    margin-top: 20px;
     text-align: left;
-    padding: 010px 010px;
+    padding: 15px;
     font-size: 40px;
     border-radius: 0px;
     font-weight: bold;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .biografia {
@@ -88,7 +90,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    align-self: center;
+    align-self: normal;
 }
 
 .social-button:hover {
@@ -96,8 +98,8 @@ body {
 }
 
 .btn {
-    Width: min(100%,950px);
-    padding: 10px 20px;
+    
+    padding: 15px 25px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -109,6 +111,8 @@ body {
     box-shadow:  5px 5px 10px #bebebe,
     -5px -5px 10px #ffffff;
     margin-bottom: 20px; /* Ajusta el margen inferior según tus preferencias */
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .btn:hover {
