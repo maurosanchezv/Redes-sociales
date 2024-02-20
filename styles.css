@@ -140,3 +140,45 @@ body {
 .btn i {
     margin-right: 5px;
 }
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en múltiples líneas si es necesario */
+    justify-content: space-around; /* Distribuye los botones de manera uniforme */
+    margin-top: 200px;
+}
+
+.imagen {
+  background-image: var(--imagen); /* Use background-image for better performance */
+  background-size: cover;
+  width: min(100%, 300px);
+  overflow: hidden; /* Prevent image overflow */
+  position: relative;
+  transition: 400ms ease all; /* Smooth zoom transition */
+  
+  cursor: zoom-in; /* Indicate zoom on hover */
+  filter: grayscale(100%) opacity(35%); /* Adjust grayscale and opacity */
+  margin: 10px; /* Add margin for spacing */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.3);
+  align-self: center;
+}
+/*
+.imagen:nth-child(odd){
+    transform: translateY(-20px);
+}*/
+.imagen:hover {
+    transform: scale(1.5);
+    filter: grayscale(0%) opacity(100%);
+    z-index: 999; /* Bring zoomed image on top */
+
+}
+.es-collage {
+    /* display: grid; */
+    gap: var(--8b51a0be);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+}
